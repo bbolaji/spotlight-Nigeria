@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlight Nigeria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Spotlight Nigeria</h1>
+    <p>Connecting citizens with authorities to improve infrastructure across Nigeria.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Map Section -->
+    <section id="map-section">
+      <h2>Map of Reported Issues</h2>
+      <div id="map-container">
+        <p>Interactive map showing locations of reported issues</p>
+        <!-- Here you would integrate a real map API like Google Maps -->
+      </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload-section">
+      <h2>Report an Issue</h2>
+      <form id="upload-form">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="roads">Roads</option>
+          <option value="schools">Schools</option>
+          <option value="water">Water</option>
+          <option value="electricity">Electricity</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="sports">Sports Facilities</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter state, LGA, specific location">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Describe the issue..."></textarea>
+
+        <label for="file">Upload Image/Video:</label>
+        <input type="file" id="file" name="file">
+
+        <button type="submit">Submit Issue</button>
+      </form>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+      <h2>Success Stories</h2>
+      <div class="story">
+        <h3>Repaired Road in Yaba</h3>
+        <p>After citizen reports, the main road was successfully repaired, improving access for the community.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Spotlight Nigeria © 2024</p>
+    <p>Empowering communities for a better Nigeria.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
